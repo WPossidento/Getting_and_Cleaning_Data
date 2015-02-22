@@ -52,7 +52,7 @@ colNames = colnames(finalData);
 
 # 2. Extract only the measurements on the mean and standard deviation for each measurement:
 
-# Define logicalVector to TRUE values for the ID, mean() & stddev() columns and FALSE for others
+# Define variable extract to TRUE values for the ID, mean() & stddev() columns and FALSE for others
 extract = (grepl("activity..",colNames) | grepl("subject..",colNames) | grepl("-mean..",colNames) & !grepl("-meanFreq..",colNames) & !grepl("mean..-",colNames) | grepl("-std..",colNames) & !grepl("-std()..-",colNames));
 
 # Subset finalData to retain desired columns:
