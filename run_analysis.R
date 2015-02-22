@@ -14,6 +14,8 @@
 # Set working directory:
 setwd("C:/Users/Bill/Desktop/Coursera_JHU_Data_Science_Specialization/UCI HAR Dataset")
 
+# 1. Merge the training and the test sets to create one data set:
+
 # Read the data from the files:
 features = read.table('./features.txt',header=FALSE); #imports features.txt
 activityType = read.table('./activity_labels.txt',header=FALSE); #imports activity_labels.txt
